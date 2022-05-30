@@ -234,7 +234,7 @@ class _LoginPageState extends State<LoginPage> {
       _isLoading = true;
     });
     var data = {'email': email, 'password': password};
-
+ 
     var res = await Network().authData(data, '/login');
     var body = json.decode(res.body);
     if (body['token'] != null) {
