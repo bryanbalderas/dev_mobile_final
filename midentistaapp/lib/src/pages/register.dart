@@ -220,6 +220,9 @@ class _RegisterPageState extends State<RegisterPage> {
         context,
         new MaterialPageRoute(builder: (context) => RegisterClientePage()),
       );
+    }else{
+      _showMsg(body['message']);
+
     }
 
     setState(() {

@@ -254,6 +254,9 @@ class _RegisterClientePageState extends State<RegisterClientePage> {
         context,
         new MaterialPageRoute(builder: (context) => AgendaPage()),
       );
+    }else{
+      _showMsg(body['message']);
+
     }
 
     setState(() {

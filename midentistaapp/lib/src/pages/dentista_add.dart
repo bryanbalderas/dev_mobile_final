@@ -167,6 +167,9 @@ class _DentistaAddPageState extends State<DentistaAddPage> {
         context,
         new MaterialPageRoute(builder: (context) => AgendaPage()),
       );
+    }else{
+      _showMsg(body['message']);
+
     }
 
     setState(() {

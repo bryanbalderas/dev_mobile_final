@@ -202,6 +202,9 @@ class _CitaAddPageState extends State<CitaAddPage> {
         context,
         new MaterialPageRoute(builder: (context) => AgendaPage()),
       );
+    }else{
+      _showMsg(body['message']);
+  
     }
 
     setState(() {
